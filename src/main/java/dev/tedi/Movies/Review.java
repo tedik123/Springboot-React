@@ -15,4 +15,9 @@ public class Review {
     @Id
     private ObjectId id;
     private String body;
+
+//    since objectID is auto generated we just care about the body
+    public Review(String body) {
+        this.body = body;
+    }
 }
